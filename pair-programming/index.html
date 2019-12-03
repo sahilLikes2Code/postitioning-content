@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-width-color">
+    <main class="container">
+        <h1 class="heading text-center">Side-By-Side Positioning Demo</h1>
+        <div class="div1 inline-block b-box bg-color-red b-radius w-45">
+            <p>These are two divs positioned next to one other using <span class="bg-span-red">display:
+                    inline-block</span></p>
+        </div>
+        <div class="div2 inline-block b-box bg-color-red b-radius w-45">
+            <p>Notice the space between them. It occurs because of my carriage return in the HTML which i have used to
+                keep the code organised. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia at quibusdam
+                soluta vero similique minima cum facilis nisi odit inventore deserunt aliquam tenetur, quis numquam.
+                Architecto corrupti natus molestias modi!</p>
+        </div>
+        <div class="clearfix">
+            <div class="div3 inline-block b-box bg-color-green b-radius f-left w-45">
+                <p>These two are positioned using <span class="bg-span-green">float: left.</span></p>
+            </div>
+            <div class="div4 inline-block b-box bg-color-green b-radius f-left w-45">
+                <p>You can see that, even though the elements are spaced in the code, the space is not actually rendered
+                    on the page. This may not be a huge deal in the first examples, but...</p>
+            </div>
+        </div>
+        <div class="clearfix">
+            <div class="div5  b-box bg-color-red b-radius f-left w-50">
+                <p>What if i want my side-by-side elements to take up the full width of the parent element? I can set
+                    the width of each to 50%, right?</p>
+            </div>
+        </div>
+        <div class="clearfix">
+            <div class="div6 b-box  bg-color-red b-radius f-left w-50">
+                <p>Wrong! Because, together, the two inline block elements will add upt ot 100% of the available width,
+                    but
+                    that doesn't account for the space between</p>
+            </div>
+        </div>
+        <div class="clearfix">
+            <div class="div7 b-box  bg-color-green b-radius f-left w-45">
+                <p>If I do the same thing with the floated elements...</p>
+            </div>
+            <div class="div8 b-box  bg-color-green b-radius f-left w-45">
+                <p>The two elements are side-by-side just as I intended and fill the entire width of the parent (which, in this case, is the same as the width of the viewport.</p>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
